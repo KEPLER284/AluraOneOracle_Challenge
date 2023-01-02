@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alura Challenge </title>
+     <link rel="shortcut icon" href="imagenes/icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="reseteoestilo.css">
+</head>
+
+<body>
+    <header>
+        <h1><img class="logo" src="logo/Logo.png"></h1>
+    </header>
+
+    <main>
+
+        <form>
+
+            <textarea class="caja" placeholder="Ingrese el texto aquí" cols="30" rows="10"></textarea>
+
+            <div class="nota">
+
+                <img src="iconos/condicion.png">
+                <p>Solo letras minúsculas y sin acentos</p>
+
+            </div>
+
+            <ul class="seccion-botones">
+                <li>
+                    <input class="boton" id="encriptar" type="button" value="Encriptar">
+                </li>
+                <li>
+                    <input class="boton" id="desencriptar" type="button" value="Desencriptar">
+                </li>
+            </ul>
+
+        </form>
+
+        <div class="seccion-resultado">
+
+            <textarea class="caja-resultado" cols="30" rows="10" readonly></textarea>
+            <img  class="resultado-imagen" src="imagenes/Muñeco.png">
+            <div class="mensaje">
+                <h2 class="nmensaje">Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <input class="boton" id="copiar" type="button" value="Copiar">
+
+        </div>
+
+        
+
+    </main>
+
+    <script src="./encriptado.js"></script>
+</body>
+
+</html>
